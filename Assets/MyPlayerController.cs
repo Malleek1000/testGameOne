@@ -42,7 +42,7 @@ public class MyPlayerController : MonoBehaviour
         //Jump code
 if (Input.GetKey(KeyCode.W))
         {
-            myPhysics.AddForce(Vector2.up * speed * Time.deltaTime);
+            myPhysics.AddForce(Vector2.up * jumpower * Time.deltaTime);
         }
 
 
