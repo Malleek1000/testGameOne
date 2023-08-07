@@ -12,6 +12,8 @@ public class MyPlayerController : MonoBehaviour
     public Rigidbody2D myPhysics;
 
 
+    public float maxSpeed;
+
 
 
 
@@ -46,8 +48,11 @@ if (Input.GetKey(KeyCode.W))
         }
 
 
-
-
+        //dont go faster than max speed
+        float currentSpeed = myPhysics.velocity.x;
+        currentSpeed = Mathf.Clamp(currentSpeed, -1.0F * maxSpeed, maxSpeed);
+        myPhysics.velocity = new Vector2(currentSpeed, myPhysics.velocity.y);
+        
 
 
 

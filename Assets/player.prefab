@@ -121,6 +121,7 @@ MonoBehaviour:
   speed: 600
   jumpower: 600
   myPhysics: {fileID: 7589751563766052467}
+  maxSpeed: 10
 --- !u!61 &7589751563766052466
 BoxCollider2D:
   m_ObjectHideFlags: 0
