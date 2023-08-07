@@ -13,8 +13,10 @@ public class MyPlayerController : MonoBehaviour
 
 
     public float maxSpeed;
+    public Animator myAnimator;
+    public int state; // 1 =, 2 = walking 
 
-
+    
 
 
     // Start is called before the first frame update
@@ -35,14 +37,14 @@ public class MyPlayerController : MonoBehaviour
 
 
 
-    if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.D))
         {
             myPhysics.AddForce(Vector2.right * speed * Time.deltaTime);
         }
 
 
         //Jump code
-if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.W))
         {
             myPhysics.AddForce(Vector2.up * jumpower * Time.deltaTime);
         }
@@ -53,6 +55,26 @@ if (Input.GetKey(KeyCode.W))
         currentSpeed = Mathf.Clamp(currentSpeed, -1.0F * maxSpeed, maxSpeed);
         myPhysics.velocity = new Vector2(currentSpeed, myPhysics.velocity.y);
         
+        //change animation if alking or idle
+        if ();
+        {
+            if (stat == 1 ) //state = idle 
+            {
+                myAnimator.SetTrigger("walking");
+            }
+        } 
+        
+        
+         
+     
+    
+
+
+
+
+
+
+
 
 
 
