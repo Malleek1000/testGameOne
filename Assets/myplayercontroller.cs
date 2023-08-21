@@ -5,7 +5,7 @@ using UnityEngine;
 public class MyPlayerController : MonoBehaviour
 {
    
-   // amogus
+   // amogususususususussususususususususususususususususususususususususususususususususususususususususussymoooogguuuss
     
     public float speed;
     public float jumpower;
@@ -16,7 +16,7 @@ public class MyPlayerController : MonoBehaviour
     public Animator myAnimator;
     public int state; // 1 =, 2 = walking 
 
-    
+   
 
 
     // Start is called before the first frame update
@@ -34,7 +34,15 @@ public class MyPlayerController : MonoBehaviour
         {
             myPhysics.AddForce(Vector2.left * speed * Time.deltaTime);
         }
+                        //amogussy
 
+
+
+
+
+
+
+                                //sussy wussy
 
 
         if (Input.GetKey(KeyCode.D))
@@ -48,7 +56,7 @@ public class MyPlayerController : MonoBehaviour
         {
             myPhysics.AddForce(Vector2.up * jumpower * Time.deltaTime);
         }
-
+                        
 
         //dont go faster than max speed
         float currentSpeed = myPhysics.velocity.x;
@@ -56,9 +64,9 @@ public class MyPlayerController : MonoBehaviour
         myPhysics.velocity = new Vector2(currentSpeed, myPhysics.velocity.y);
         
         //change animation if alking or idle
-        if ();
+        
         {
-            if (stat == 1 ) //state = idle 
+            if (state == 1 ) //state = idle 
             {
                 myAnimator.SetTrigger("walking");
             }
