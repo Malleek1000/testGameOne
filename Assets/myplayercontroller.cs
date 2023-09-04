@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MyPlayerController : MonoBehaviour
+public class myplayercontroller : MonoBehaviour
 {
    
    // amogus
