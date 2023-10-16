@@ -328,7 +328,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7589751563766052476, guid: 7260859e282136445a39b13330cce3c1, type: 3}
       propertyPath: jumpower
-      value: 500
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 7589751563766052476, guid: 7260859e282136445a39b13330cce3c1, type: 3}
       propertyPath: maxSpeed
@@ -583,7 +583,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4335613518958279458, guid: ebfddfb6f40830a41b5525acad72b800, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.42
+      value: -0.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 4335613518958279458, guid: ebfddfb6f40830a41b5525acad72b800, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.29
       objectReference: {fileID: 0}
     - target: {fileID: 4335613519259383418, guid: ebfddfb6f40830a41b5525acad72b800, type: 3}
       propertyPath: m_RootOrder
