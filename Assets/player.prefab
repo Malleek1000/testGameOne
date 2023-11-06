@@ -219,5 +219,5 @@ MonoBehaviour:
   myAnimator: {fileID: 7589751563766052479}
   isFacingLeft: 0
   can_jump: 1
-  dead_delay: 3
+  dead_delay: 10
   game_over_scene_name: 
